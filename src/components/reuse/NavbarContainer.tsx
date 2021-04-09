@@ -11,7 +11,7 @@ export const NavbarContainer = () => {
           })
           .then((response) => 
           {
-            //   console.log(response.items)
+              console.log(response.items)
               setNav(response.items)
               
           })
