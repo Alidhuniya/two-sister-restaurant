@@ -1,0 +1,12 @@
+.socailicons {
+    display: flex;
+}
+
+.fab-icons {
+     color: #A8A8A8;
+    
+}
+
+.fab-icons + .fab-icons {
+    margin-left: 1.5rem;
+}

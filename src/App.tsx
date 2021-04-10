@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import {NavbarContainer} from "./components/reuse/NavbarContainer";
+import {Socialicons} from "./components/reuse/footereuse/Socialicons";
 
 
 
@@ -7,7 +8,8 @@ import {NavbarContainer} from "./components/reuse/NavbarContainer";
   return (
     <Fragment>
      <div>
-       <NavbarContainer />
+       {/* <NavbarContainer /> */}
+       <Socialicons />
      </div>
     </Fragment>
   )
