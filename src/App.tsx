@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import {NavbarContainer} from "./components/reuse/NavbarContainer";
-import {Socialicons} from "./components/reuse/footereuse/Socialicons";
-
+import {Googlemap} from "./components/reuse/Googlemap";
 
 
  export const  App = () => {
@@ -9,7 +8,7 @@ import {Socialicons} from "./components/reuse/footereuse/Socialicons";
     <Fragment>
      <div>
        {/* <NavbarContainer /> */}
-       <Socialicons />
+      <Googlemap />
      </div>
     </Fragment>
   )
