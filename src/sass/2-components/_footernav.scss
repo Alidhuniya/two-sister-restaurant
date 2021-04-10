@@ -1,0 +1,30 @@
+.footernav {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    // background: #242424;
+
+}
+
+.footernav__ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footernav__li + .footernav__li{
+    margin-left: 2rem;
+}
+
+.footernav__h1 {
+    text-transform: capitalize;
+    font-weight: 600;
+    color:#A8A8A8;
+    font-size: 1rem;
+}
+
+@media all and (max-width: 964px ) {
+    .footernav__li + .footernav__li{
+        margin-left: 0rem;
+        margin-right: 1rem;
+    }
+    
+}

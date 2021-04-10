@@ -1,6 +1,7 @@
 import React, {useState, useEffect, Fragment} from "react";
 import { Client } from "../../contentful/Client";
 import {Navbar} from "./Navbarview";
+import {Footernav} from "./footereuse/Footernav";
 
 export const NavbarContainer = () => {
     const [nav, setNav] = useState(null);
@@ -22,7 +23,8 @@ export const NavbarContainer = () => {
     return (
         <div>
            
-             <Navbar nav= {nav} />
+             {/* <Navbar nav= {nav} /> */}
+             <Footernav nav = {nav} />
              {/* <h1>{nav&& nav[0].fields.navtext}</h1> */}
            
         </div>
