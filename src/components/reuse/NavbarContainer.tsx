@@ -1,30 +1,19 @@
-import React, {useState, useEffect, Fragment} from "react";
-import { Client } from "../../contentful/Client";
+import React, {useState} from "react";
 import {Navbar} from "./Navbarview";
-import {Footernav} from "./footereuse/Footernav";
+import {useNavbarApi} from "./../customHooks/Naveffect";
+
 
 export const NavbarContainer = () => {
     const [nav, setNav] = useState(null);
-    
-    useEffect( () => {
-        Client.getEntries({
-            content_type: 'resNavbar'
-          })
-          .then((response) => 
-          {
-              console.log(response.items)
-              setNav(response.items)
-              
-          })
-          .catch(console.error)
-    }, [], );
+    useNavbarApi(setNav);
     if (!nav) return <span>loading..........</span>
 //    console.log(nav)
     return (
         <div>
            
-             {/* <Navbar nav= {nav} /> */}
-             <Footernav nav = {nav} />
+             <Navbar nav= {nav} />
+             {/* <Footernav nav = {nav} /> */}
+        
              {/* <h1>{nav&& nav[0].fields.navtext}</h1> */}
            
         </div>
